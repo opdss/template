@@ -1,0 +1,27 @@
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side navbar-inside-side" role="navigation">
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse" menu-role><!--menu-role指令获取用户角色-->
+                <ul class="nav" id="side-menu" side-menu>
+                    <li ng-repeat="app in apps" on-finish-render>
+                        <a href="javascript:void(0);"><i class="fa fa-desktop"></i><span class="nav-label">{{app.name}}</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li ng-repeat="appDetail in app.apps"><a class="J_menuItem" href="javascript:void(0);" ui-sref="applications.appRealGraph(appDetail)">{{appDetail}}图</a>
+                            <a class="J_menuItem" href="javascript:void(0);" ui-sref="applications.mainTable(appDetail)">{{appDetail}}表</a>
+                            <a class="J_menuItem" href="javascript:void(0);" ui-sref="applications.wrong(appDetail)">{{appDetail}}错</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1" >
+            <div class="wrapper wrapper-content" ui-view="main">
+                
+            </div>
+
+        </div>
+        <!--右侧部分结束-->

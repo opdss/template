@@ -1,0 +1,26 @@
+[
+	{
+		"name": "sys1",
+		"apps": [
+				"app1",
+				"app2",
+				"app3"
+			]
+	},
+	{
+		"name": "sys2",
+		"apps": [
+				"app21",
+				"app22",
+				"app23"
+			]
+	},
+	{
+		"name": "sys3",
+		"apps": [
+				"app31",
+				"app32",
+				"app33"
+			]
+	}
+]

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title> IPD-UI-主页</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="/ipd-ui/favicon.ico"/>
+    <link rel="bookmark" href="/ipd-ui/favicon.ico"/>
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+	<link href="/ipd-ui/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/ipd-ui/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/ipd-ui/css/animate.css" rel="stylesheet">
+    <link href="/ipd-ui/css/style.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>
+            <!-- <div class="sidebar-collapse" menu-list>--><!--menu-list指令获取菜单列表-->
+            <div class="sidebar-collapse" menu-role><!--menu-role指令获取用户角色-->
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs" style="font-size:20px;">
+
+                                        <i class="logo-img"></i>
+
+                                        <strong class="font-bold">IPD-UI</strong>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="logo-element">IPD-UI</div>
+                    </li>
+                    <!--picture-o-->
+                    <!--pie-chart-->
+                    <!--plane-->
+                    <!--plug-->
+                    <!--start 菜单demo-->
+                    <!--start 页面-->
+                    <li ng-if="role <= 0">
+                        <a href="#"><i class="fa  fa-pie-chart"></i> <span class="nav-label">menu_demo1</span></a>
+                    </li>
+                    <li>
+                        <!--a 2ui-sref写内容对应的假地址-->
+                        <a ui-sref="table"><i class="fa  fa-pie-chart"></i> <span class="nav-label">table</span></a>
+                    </li>
+                    <li>
+                        <!--a 2ui-sref写内容对应的假地址-->
+                        <a ui-sref="table2"><i class="fa  fa-pie-chart"></i> <span class="nav-label">table2</span></a>
+                    </li>
+                    <li>
+                        <!--a 2ui-sref写内容对应的假地址-->
+                        <a ui-sref="notAuthenticated"><i class="fa  fa-pie-chart"></i> <span class="nav-label">无权限页面</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">menu_demo2</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+                            <li><a class="J_menuItem" href="/ipd-ui/faq.html">menu2</a>
+                            </li>
+                            <li>
+                                <a href="#">menu2-father <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="/ipd-ui/timeline.html">menu3</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/timeline_v2.html">menu3</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">menu2-father  <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a href="/ipd-ui/login.html" target="_blank">menu3</a>
+                                    </li>
+
+                                    <li><a href="/ipd-ui/register.html" target="_blank">menu3</a>
+                                    </li>
+                                    <li><a href="/ipd-ui/lockscreen.html" target="_blank">menu3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--start 页面-->
+                    <!--start 菜单分割线-->
+                    <li class="line dk"></li>
+                    <!--end 菜单分割线-->
+                    <li>
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">menu_demo2</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+                            <li><a class="J_menuItem" href="/ipd-ui/faq.html">menu2</a>
+                            </li>
+                            <li>
+                                <a href="#">menu2-father <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="/ipd-ui/timeline.html">menu3</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/timeline_v2.html">menu3</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">menu2-father  <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a href="/ipd-ui/login.html" target="_blank">menu3</a>
+                                    </li>
+
+                                    <li><a href="/ipd-ui/register.html" target="_blank">menu3</a>
+                                    </li>
+                                    <li><a href="/ipd-ui/lockscreen.html" target="_blank">menu3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/404.html">menu2</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/500.html">menu2</a>
+
+                        </ul>
+                    </li>
+                    <!--start 页面-->
+                    <!--start 菜单分割线-->
+                    <li class="line dk"></li>
+                    <!--end 菜单分割线-->
+                    <!--end 菜单demo-->
+
+                    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                        <span class="ng-scope">UI组件与页面模板</span>
+                    </li>
+
+                    <li>
+                        <a class="J_menuItem" href="/ipd-ui/index_v1.html">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">系统首页</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa fa-bar-chart-o"></i>
+                            <span class="nav-label">图表组件</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/ipd-ui/graph_echarts.html">百度ECharts</a>
+                            </li>
+
+                            <li>
+                                <a class="J_menuItem" href="/ipd-ui/graph_peity.html">Peity</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="/ipd-ui/graph_sparkline.html">Sparkline</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="/ipd-ui/graph_metrics.html">图表组合</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--start 表单-->
+                    <li>
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">表单</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="J_menuItem" href="/ipd-ui/form_basic.html">基本表单</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/form_validate.html">表单验证</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/form_advanced.html">高级插件</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/form_wizard.html">表单向导</a>
+                            </li>
+                            <li>
+                                <a href="#">文件上传 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="/ipd-ui/form_webuploader.html">百度WebUploader</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/form_file_upload.html">DropzoneJS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">编辑器 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="/ipd-ui/form_editors.html">富文本编辑器</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/form_simditor.html">simditor</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/form_markdown.html">MarkDown编辑器</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/code_editor.html">代码编辑器</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/layerdate.html">日期选择器layerDate</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--end 表单-->
+                    <!--start 页面类型-->
+                    <li>
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+                            <li><a class="J_menuItem" href="/ipd-ui/faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">时间轴 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="/ipd-ui/timeline.html">时间轴</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/timeline_v2.html">时间轴v2</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">登录注册相关 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a href="/ipd-ui/login.html" target="_blank">登录页面</a>
+                                    </li>
+
+                                    <li><a href="/ipd-ui/register.html" target="_blank">注册页面</a>
+                                    </li>
+                                    <li><a href="/ipd-ui/lockscreen.html" target="_blank">登录超时</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/404.html">404页面</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/500.html">500页面</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/empty_page.html">空白页</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--end 页面类型-->
+                    <!--start UI元素-->
+                    <li>
+                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="J_menuItem" href="/ipd-ui/typography.html">排版</a>
+                            </li>
+                            <li>
+                                <a href="#">字体图标 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a class="J_menuItem" href="/ipd-ui/fontawesome.html">Font Awesome</a>
+                                    </li>
+                                    <li>
+                                        <a class="J_menuItem" href="/ipd-ui/glyphicons.html">Glyphicon</a>
+                                    </li>
+                                    <li>
+                                        <a class="J_menuItem" href="/ipd-ui/iconfont.html">阿里巴巴矢量图标库</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">拖动排序 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="/ipd-ui/draggable_panels.html">拖动面板</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/agile_board.html">任务清单</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/buttons.html">按钮</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/tabs_panels.html">选项卡 &amp; 面板</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/notifications.html">通知 &amp; 提示</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/badges_labels.html">徽章，标签，进度条</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="/ipd-ui/grid_options.html">栅格</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/plyr.html">视频、音频</a>
+                            </li>
+                            <li>
+                                <a href="#">弹框插件 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="/ipd-ui/layer.html">Web弹层组件layer</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/modal_window.html">模态窗口</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/sweetalert.html">SweetAlert</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">树形视图 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a class="J_menuItem" href="/ipd-ui/jstree.html">jsTree</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/tree_view.html">Bootstrap Tree View</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="/ipd-ui/nestable_list.html">nestable</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/toastr_notifications.html">Toastr通知</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/diff.html">文本对比</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/spinners.html">加载动画</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/widgets.html">小部件</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--end UI元素-->
+                    <!--start 表格相关组件-->
+                    <li>
+                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">表格</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="J_menuItem" href="/ipd-ui/table_basic.html">基本表格</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/table_data_tables.html">DataTables</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/table_jqgrid.html">jqGrid</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/table_foo_table.html">Foo Tables</a>
+                            </li>
+                            <li><a class="J_menuItem" href="/ipd-ui/table_bootstrap.html">Bootstrap Table
+                                <span class="label label-danger pull-right">推荐</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--end 表格相关组件-->
+                    <!--start css_animation-->
+                    <li>
+                        <a class="J_menuItem" href="/ipd-ui/css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
+                    </li>
+                    <!--start css_animation-->
+                    <li>
+                        <a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="J_menuItem" href="/ipd-ui/form_builder.html">表单构建器</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--end 工具-->
+
+                </ul>
+            </div>
+        </nav>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <!--start 顶部导航-->
+            <div class="row border-bottom">
+
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+
+                    <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-info " href="#"><i class="fa fa-bars"></i> </a>
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="#">我的目录</a></li>
+                            <li><a href="#">数据源</a></li>
+                            <li><a href="#">数据集管理</a></li>
+                            <li><a href="#">邮件推送</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">帮助中心 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">帮助中心1</a></li>
+                                    <li><a href="#">帮助中心2 </a></li>
+                                    <li><a href="#">帮助中心3</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">帮助中心4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--<form role="search" class="navbar-form-custom" method="post" action="search_results.html">-->
+                            <!--<div class="form-group">-->
+                                <!--<input type="text" placeholder="请输入您需要查找的内容 …" class="form-control" name="top-search" id="top-search">-->
+                            <!--</div>-->
+                        <!--</form>-->
+
+                    </div>
+
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li class="dropdown" login-info>
+                        </li>
+                    </ul>
+
+
+                </nav>
+            </div>
+            <!--end 顶部导航-->
+            <!--start  iframe 内容切换-->
+            <!--a 3 ui-view写内容展现的地方-->
+            <div class="row J_mainContent" id="content-main" ui-view="root">
+                
+            </div>
+            <iframe id="J_iframe" width="100%" height="100%" src="" frameborder="0" data-id="" seamless></iframe>
+            <!--end iframe 内容切换-->
+        </div>
+        <!--右侧部分结束-->
+    </div>
+    
+    <!-- bootstrap 标准模式 普通 带有modal-content-->
+    <div class="modal remove-data" id="normalModal" role="dialog" aria-labelledby="normalModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js ui -->
+    <script src="ipd-ui/js/jquery.min.js?v=2.1.4"></script>
+    <script src="ipd-ui/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="ipd-ui/js/plugins/metisMenu/jquery.metisMenu.js"></script><!--手风琴菜单-->
+    <script src="ipd-ui/js/plugins/slimscroll/jquery.slimscroll.min.js"></script><!--滚动-->
+    <script src="ipd-ui/js/plugins/layer/layer.min.js"></script><!--弹层-->
+    
+    <!-- 全局js angular -->
+    <script src="js/vendor/angular-1.4.9.min.js"></script>
+    <script src="js/vendor/angular-cookies-1.5.8.min.js"></script>
+    <script src="js/vendor/angular-ui-router-1.0.0.min.js"></script>
+    <script src="js/vendor/ocLazyLoad-1.0.9.min.js"></script>
+    <script src="view/auth/auth.module.js"></script>
+    <script src="view/menu/menu.module.js"></script>
+    <!--a 1此处加载文件夹下面的 文件夹名.module.js-->
+    <script src="view/table/table.module.js"></script>
+    <script src="view/table2/table2.module.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- 自定义js -->
+    <script src="ipd-ui/js/ipdadmin.js?v=4.1.0"></script>
+    <!-- <script type="ipd-ui/text/javascript" src="js/index.js"></script> -->
+
+    <!-- 第三方插件 -->
+    <script src="ipd-ui/js/plugins/pace/pace.min.js"></script>
+
+</body>
+
+</html>

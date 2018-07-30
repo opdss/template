@@ -1,0 +1,38 @@
+<!--tab切换开始-->
+<div class="tabs-container">
+  <div id="tab-1" class="tab-pane active">
+    <div class="panel-body">
+      <div class="search_wrapper" search-Data>
+        <form class="form-inline">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon">应用名称:</div>
+              <select class="form-control" ng-model="searchObj.zone" >
+                <option value="">请选择</option>
+                <option value="0">已部署</option>
+                <option value="1">未部署</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" style="float:right;">
+              <button type="button" class="btn btn-info" ng-click="searchGo('ip')" style="margin-bottom:2px;">查询</button>
+          </div>
+        </form>
+      </div>
+      <div class="dataTables_wrapper">
+        <table id="tableAppManage" class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>应用名</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+            <!-- tbody是必须的 -->
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!--tab切换结束-->

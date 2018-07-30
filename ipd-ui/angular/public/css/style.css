@@ -1,0 +1,70 @@
+#content-main{
+  margin-top: 48px;
+}
+#page-wrapper .tabs-container .nav >li >a:hover,
+#page-wrapper .tabs-container .nav-tabs > li.active > a,
+#page-wrapper .tabs-container .nav-tabs > li.active > a:hover,
+#page-wrapper .tabs-container .nav-tabs > li.active > a:focus {
+  border: 1px solid #21b8c6;
+  border-bottom-color: transparent;
+  background-color: #21b8c6;
+  color: #fff;
+}
+
+/*表格*/
+.dataTables_wrapper .dataTables_length label{
+	margin-top: 6px;
+	margin-right: 20px;
+}
+.dataTables_wrapper .dataTables_paginate {
+	margin-top: -15px;
+}
+.dataTables_wrapper .dataTables_paginate{
+	font-size: 0;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+	display: inline-block;
+	border: 1px solid #d9d9d9;
+	padding: 3px 6px;
+	margin: 0 2px;
+	font-size: 13px;
+	color: #999999;
+	cursor: pointer;
+	cursor: hand;
+}
+.dataTables_wrapper .dataTables_paginate .active  a {
+	background-color: #21b8c6;
+	border-color: #21b8c6;
+	color: #fff;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	color: #21b8c6;
+}
+.dataTables_wrapper td a{
+	margin: 0 5px;
+}
+.dataTables_wrapper .none{
+	padding: 0px;
+}
+
+.search_wrapper{
+	margin-bottom: 8px;
+}
+
+.chart_wrapper{
+	margin-top: 15px;
+	border-top: 1px solid #aaa;
+}
+.chart_wrapper .row>div{
+	height: 300px;
+}
+body.full-height-layout #wrapper, body.full-height-layout #page-wrapper{
+	height: initial;
+}
+
+/*peity*/
+.peity{
+	width: 90%;
+	height: 28px;
+	margin: 3px 5% 0;
+}

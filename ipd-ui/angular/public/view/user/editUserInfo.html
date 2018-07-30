@@ -1,0 +1,77 @@
+<form id="updateProfileForm" class="form-horizontal"
+      data-validator-option="{theme:'yellow_right_effect',stopOnError:true}">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">修改个人信息</h4>
+    </div>
+    <div class="modal-body">
+        <fieldset>
+            <input type="hidden" name="id" value="3565"/>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="name">姓名</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="input-xlarge" name="name" id="name" value="王文静"
+                           maxlength="50" data-rule="required" readonly>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="code">用户名</label>
+
+                <div class="col-sm-10">
+                    <input type="text" id="code" name="code" class="input-xlarge" value="wangwenjing5"
+                           readonly/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="code">角色</label>
+
+                <div class="col-sm-10">
+                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="email">邮箱</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="input-xlarge" name="email" id="email" value="wangwenjing3@jd.com"
+                           readonly>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="telephone">电话</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="input-xlarge" name="telephone" id="telephone"
+                           value="15110189778" readonly>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="department">部门</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="input-xlarge" name="department" id="department"
+                           value="京东集团-京东商城-商城研发部-基础平台部-中间件技术部"
+                           readonly>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right">是否报警</label>
+
+                <div class="col-sm-10">
+                                            <select name="alarm" class="input-xlarge">
+                            <option value="1" selected="selected">是</option>
+                            <option value="0">否</option>
+                        </select>
+                                                        </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary" id="btn-update-profile">保存</button>
+    </div>
+</form>

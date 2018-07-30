@@ -1,0 +1,36 @@
+{
+  "draw": 4,
+  "pageSize": 10,
+  "pageIndex": 0,
+  "recordsTotal": 57,
+  "recordsFiltered": 0,
+  "data": [
+  	{
+  		"First name": "test",
+  		"name": "test",
+  		"Last name": "test",
+  		"Position": "test",
+  		"Office": "test",
+  		"Start date": "test",
+  		"Salary": "test"
+  	},
+  	{
+  		"First name": "test2",
+  		"name": "test2",
+  		"Last name": "test2",
+  		"Position": "test2",
+  		"Office": "test2",
+  		"Start date": "test2",
+  		"Salary": "test2"
+  	},
+  	{
+  		"First name": "test3",
+  		"name": "test3",
+  		"Last name": "test3",
+  		"Position": "test3",
+  		"Office": "test3",
+  		"Start date": "test3",
+  		"Salary": "test3"
+  	}
+  ]
+}

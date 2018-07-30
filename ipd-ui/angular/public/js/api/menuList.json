@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+        "title":"Dashboard",
+        "sref":"app.dashboard",
+        "icon":"home"
+    },
+    {
+       "title": "line" 
+    },
+    {
+        "title":"App Views",
+        "href":"#",
+        "icon":"puzzle-piece",
+        "items": [
+            {
+                "title":"Projects",
+                "sref": "app.appViews.projects",
+                "icon":"file-text-o"
+            },
+            {
+                "title":"plane",
+                "sref": "app.appViews.projects",
+                "icon":"plane",
+                "items": [
+                    {
+                        "title":"Projects",
+                        "sref": "app.appViews.projects"
+                    },
+                    {
+                        "title":"Projects",
+                        "sref": "app.appViews.projects"
+                    },
+                    {
+                        "title":"Projects",
+                        "sref": "app.appViews.projects"
+                    }
+                ]
+            }
+        ]
+    }
+  ]
+}

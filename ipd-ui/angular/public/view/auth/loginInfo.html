@@ -1,0 +1,10 @@
+
+<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+	<i class="fa fa-user"></i>{{userInfo.nick}}<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+	<li ng-if="userInfo.isAdmin"><a href="javascript:void(0);" ng-click="changeUser()">更改系统用户</a></li>
+	<li ng-if="userInfo.isAdmin"><a href="javascript:void(0);" ng-click="currentUser()">当前系统用户</a></li>
+	<li><a href="javascript:void(0);" ng-click="logOut()">退出系统</a></li>
+	
+</ul>
